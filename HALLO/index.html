@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blitzklar Gebäudeservice</title>
+
+  <!-- Styles & Skripte -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Dark-Mode-Umschalter -->
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+
+  <!-- Navigation (Glas-Effekt) -->
+  <nav class="navigation-bar">
+    <a href="#services" class="nav-link">Leistungen</a>
+    <a href="#bilder"   class="nav-link">Beispielarbeiten</a>
+    <a href="#kontakt"  class="nav-link">Kontakt</a>
+    <a href="#termin"   class="nav-link">Termin</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="bild.jpg" alt="Blitzklar Logo" width="150" />
+    <h1>Blitzklar Gebäudeservice</h1>
+    <p>Rein & Fein – Unterhaltsreinigung, Fenster, Büros, Sonderreinigung</p>
+    <p><strong>Preise:</strong> ab 25 €/Std. oder 1 €/m²</p>
+  </header>
+
+  <!-- Leistungen -->
+  <section id="services">
+    <h2>Unsere Leistungen</h2>
+    <div class="grid">
+      <div class="card"><h3>Unterhaltsreinigung</h3><p>Regelmäßige Pflege Ihrer Räume.</p></div>
+      <div class="card"><h3>Fensterreinigung</h3><p>Streifenfreier Glanz für alle Fensterarten.</p></div>
+      <div class="card"><h3>Büroreinigung</h3><p>Sauberkeit für Produktivität.</p></div>
+      <div class="card"><h3>Sonderreinigung</h3><p>Individuelle Spezialreinigungen nach Bedarf.</p></div>
+    </div>
+  </section>
+
+  <!-- Beispielarbeiten -->
+  <section id="bilder">
+    <h2>Beispielarbeiten</h2>
+    <div class="example-images">
+      <img src="fenster.jpg" alt="Fensterreinigung" />
+      <img src="OIP.jpeg"   alt="Büroreinigung"    />
+      <img src="R.jpeg"     alt="Bodenreinigung"   />
+    </div>
+  </section>
+
+  <!-- Termin-Anfrage (geht an Formspree) -->
+  <section id="kontakt">
+    <h2>Online Termin anfragen</h2>
+    <form action="https://formspree.io/f/mldbkylb" method="POST">
+      <input type="text"  name="name"    placeholder="Name"          required />
+      <input type="date"  name="date"                               required />
+      <input type="text"  name="place"   placeholder="Ort / Adresse" required />
+      <textarea name="details" placeholder="Wunschtermin oder Details"></textarea>
+      <input type="hidden" name="_subject" value="Neue Termin-Anfrage über die Website">
+      <button type="submit">Termin anfragen</button>
+    </form>
+  </section>
+
+  <!-- Kontakt-Formular -->
+  <section id="termin">
+    <h2>Kontakt</h2>
+    <form action="https://formspree.io/f/mldbkylb" method="POST">
+      <input type="text"   name="name"    placeholder="Ihr Name"   required />
+      <input type="email"  name="email"   placeholder="Ihre E-Mail" required />
+      <input type="tel"    name="phone"   placeholder="Telefonnummer" />
+      <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+      <input type="hidden" name="_subject" value="Nachricht von der Website">
+      <button type="submit">Absenden</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📧 kontakt@blitzklar.de</p>
+      <p>📞 01234 567890</p>
+      <p>💬 WhatsApp: +49 123 4567890</p>
+      <p>📷 <a href="https://instagram.com" target="_blank">Instagram</a></p>
+      <p>🎵 <a href="https://tiktok.com"    target="_blank">TikTok</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>&copy; 2025 Blitzklar Gebäudeservice – Rein & Fein</div>
+    <div class="footer-links">
+      <a href="#services">Leistungen</a>
+      <a href="#bilder">Arbeiten</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#termin">Termin</a>
+    </div>
+    <div class="logo-loader"><img src="logo.png" class="logo-spin" alt="Logo"></div>
+  </footer>
+</body>
+</html>
